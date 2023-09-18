@@ -1,0 +1,12 @@
+.header {
+    background-color: lightgreen;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    color: #212529;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    color: inherit;
+    margin-right: 20px;
+}

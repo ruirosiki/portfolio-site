@@ -1,0 +1,19 @@
+.nav-bar {
+    font-size: 25px;
+    height: 100px;
+}
+
+.nav-bar__links {
+    color: orange;
+}
+
+.nav-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 900px;
+    /* margin: 0 auto 0 0; */
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: lightblue;
+}

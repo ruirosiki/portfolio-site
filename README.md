@@ -1,3 +1,3 @@
-# MERN-Stack Infrastructure
+# Welcome to my personal portfolio website
 
-Clone this repo to provide the starter code for a comprehensive MERN-Stack project including token-based authentication.
+This website showcases the projects that I have worked on or currently working on. Feel free to contact me with any questions.
