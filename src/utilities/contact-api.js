@@ -3,6 +3,7 @@ const BASE_URL = "/api/contact";
 
 export async function sendMail(details) {
   console.log("so far so good - contact api");
+  console.log("This is details:", details);
   return sendRequest(BASE_URL, "POST", details);
 }
 

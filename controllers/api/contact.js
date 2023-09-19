@@ -4,7 +4,9 @@ require("dotenv").config();
 async function sendMail(req, res) {
   const contactEmail = nodemailer.createTransport({
     service: "gmail",
+    // service: "iCloud",
     host: "smtp.gmail.com",
+    // host: "smtp.mail.me.com",
     port: 465,
     secure: true,
     auth: {
@@ -23,14 +25,15 @@ async function sendMail(req, res) {
     }
   });
 
-  console.log("so far so good.");
-  const { name, email, message } = req.body;
+  const { name, email, phone, message } = req.body;
+  console.log("Received Data:", req.body);
   const mail = {
     from: name,
-    to: "ruirosiki@gmail.com",
+    to: "andrew@nibroc.dev",
     subject: "Contact Form Submission",
     html: `<p>Name: ${name}</p>
             <p>Email: ${email}</p>
+            <p>Phone: ${phone}</p>
             <p>Message: ${message}</p>
         `,
   };
