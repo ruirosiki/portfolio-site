@@ -1,40 +1,22 @@
 export const menuItems = [
   {
     title: "Home",
-    url: "/",
+    url: "#/",
   },
   {
     title: "About",
-    url: "/about",
-  },
-  //   {
-  //     title: "Projects",
-  //     url: "/projects",
-  //   },
-  {
-    title: "Connect",
-    url: "/connect",
-    subMenu: [
-      {
-        title: "GitHub",
-        url: "git-hub",
-      },
-      {
-        title: "LinkdIn",
-        url: "linkdin",
-      },
-      {
-        title: "Instagram",
-        url: "instagram",
-      },
-    ],
+    url: "#about",
   },
   {
-    title: "Resume",
-    url: "resume",
+    title: "Experience",
+    url: "#experience",
+  },
+  {
+    title: "Projects",
+    url: "#projects",
   },
   {
     title: "Contact",
-    url: "contact",
+    url: "#contact",
   },
 ];

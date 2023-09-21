@@ -1,17 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import * as userService from "../../utilities/users-service";
 import { menuItems } from "../../menuItems";
 import MenuItems from "../MenuItems/MenuItems";
-import DropDown from "../DropDown/DropDown";
+import "./NavBar.css";
 
-export default function NavBar({ user, setUser }) {
+export default function NavBar() {
   const depthLevel = 0;
   return (
-    <nav className="menus">
+    <nav className="menus nav-area">
       <ul className="menus">
         {menuItems.map((menu, index) => {
-          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
+          return <MenuItems items={menu} key={index} />;
         })}
       </ul>
     </nav>

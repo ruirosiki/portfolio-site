@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="nav-area">
-        <Link to="/" className="logo"></Link>
+        <Link to="home" className="logo"></Link>
         <NavBar />
       </div>
     </header>

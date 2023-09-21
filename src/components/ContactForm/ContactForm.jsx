@@ -4,12 +4,6 @@ import * as contactApi from "../../utilities/contact-api";
 
 const ContactForm2 = () => {
   const [status, setStatus] = useState("Submit");
-  // const [contactDetails, setContactDetails] = useState({
-  //   name: "",
-  //   phone: "",
-  //   email: "",
-  //   message: "",
-  // });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,26 +20,13 @@ const ContactForm2 = () => {
     alert(status);
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setStatus("Sending...");
-  //   console.log(status);
-  //   console.log("this is state in contact form:", contactDetails);
-  //   const { name, email, phone, message } = contactDetails;
-  //   console.log("this is name", name);
-  //   let details = {
-  //     name: name,
-  //     email: email,
-  //     phone: phone,
-  //     message: message,
-  //   };
-  //   await contactApi.sendMail(details);
-  //   setStatus("Submit");
-  //   alert(status);
-  // };
-
   return (
-    <form className="form-container" onSubmit={handleSubmit}>
+    <form
+      className="form-container"
+      onSubmit={handleSubmit}
+      id="contact"
+      style={{ height: 500 }}
+    >
       <div>
         <label htmlFor="name">Name:</label>
         <input
